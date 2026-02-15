@@ -1,8 +1,8 @@
-# BPS Bot - Business Process Sentinel
+# OPS Bot - Business Process Sentinel
 ## Requirements Document
 
 ### Project Overview
-BPS Bot is an AI-powered continuous operational intelligence and causal analysis agent for e-commerce operations. It autonomously monitors performance metrics, detects anomalies, explains root causes through multi-layer correlation analysis, and provides predictive insights with actionable recommendations.
+OPS Bot is an AI-powered continuous operational intelligence and causal analysis agent for e-commerce operations. It autonomously monitors performance metrics, detects anomalies, explains root causes through multi-layer correlation analysis, and provides predictive insights with actionable recommendations.
 
 ### Core Value Proposition
 **One-liner**: BPS Bot continuously monitors e-commerce operations, detects drops or anomalies in performance, explains the exact operational causes, and recommends corrective actions—before and after impact.
