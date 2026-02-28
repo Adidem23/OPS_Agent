@@ -5,7 +5,7 @@
 OPS Bot is an AI-powered continuous operational intelligence and causal analysis agent for e-commerce operations. It autonomously monitors performance metrics, detects anomalies, explains root causes through multi-layer correlation analysis, and provides predictive insights with actionable recommendations.
 
 ### Core Value Proposition
-**One-liner**: BPS Bot continuously monitors e-commerce operations, detects drops or anomalies in performance, explains the exact operational causes, and recommends corrective actions—before and after impact.
+**One-liner**: OPS Bot continuously monitors e-commerce operations, detects drops or anomalies in performance, explains the exact operational causes, and recommends corrective actions—before and after impact.
 
 ### Operating Modes
 1. **Monitor**: Continuous performance tracking across all operational layers
