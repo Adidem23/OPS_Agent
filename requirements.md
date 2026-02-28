@@ -1,4 +1,4 @@
-# OPS Bot - Business Process Sentinel
+# OPS Bot - Operational Process Sentinel
 ## Requirements Document
 
 ### Project Overview
