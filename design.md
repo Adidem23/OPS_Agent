@@ -1,13 +1,13 @@
-# BPS Bot - Business Process Sentinel
+# OPS Bot - Business Process Sentinel
 ## System Design Document
 
 ### Architecture Overview
 
-BPS Bot follows a microservices architecture with event-driven processing, designed for scalability, reliability, and real-time operational intelligence.
+OPS Bot follows a microservices architecture with event-driven processing, designed for scalability, reliability, and real-time operational intelligence.
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        BPS Bot Architecture                      │
+│                        OPS Bot Architecture                      │
 ├─────────────────────────────────────────────────────────────────┤
 │  Frontend Layer    │  API Gateway  │  Core Services  │  Data    │
 │                    │               │                 │  Layer   │
