@@ -1,37 +1,65 @@
 import time
-from fastapi import APIRouter
+import logging
+from fastapi import APIRouter, HTTPException
 from create_data import OpsDataGenerator
 
-router=APIRouter(prefix="/userquery")
+
+
+logger = logging.getLogger("data_upload_engine")
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] [%(name)s] %(message)s"
+)
+
+
+router = APIRouter(prefix="/data_upload_engine")
+
 
 @router.get("/")
 def breathingMessage():
-    return {"message":"Server is Up and Running!!"}
+
+    logger.info("Health check endpoint called")
+
+    return {"message": "Server is Up and Running!!"}
+
+
 
 @router.post("/process")
 async def processUserQuery():
+
     generator = OpsDataGenerator()
+
+    start_time = time.time()
 
     try:
 
-        start = time.time()
+        logger.info("Starting synthetic data generation batch")
 
         generator.generate_batch()
 
-        end = time.time()
+        duration = round(time.time() - start_time, 3)
 
-        generator.logger.info(
-            f"Batch completed in {round(end-start,2)} seconds"
-        )
+        logger.info(f"Batch completed successfully in {duration}s")
 
-        return {"message": f"Batch completed in {round(end-start,2)} seconds"}
+        return {
+            "status": "success",
+            "execution_time": duration
+        }
 
     except Exception as e:
 
-        generator.logger.error(f"Generator error: {e}")
-        
-        return {"message": f"Generator error: {e}"}
+        logger.exception("Data generation batch failed")
+
+        raise HTTPException(
+            status_code=500,
+            detail=f"Generator error: {str(e)}"
+        )
 
     finally:
 
-        generator.close()
+        try:
+            generator.close()
+            logger.info("Generator resources closed")
+        except Exception:
+            logger.warning("Generator close failed")
