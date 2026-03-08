@@ -15,3 +15,4 @@ mistralai
 langchain
 opik
 psycopg2
+fastmcp
