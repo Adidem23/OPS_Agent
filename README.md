@@ -50,6 +50,13 @@ Supervisor Final Insight
 
 ---
 
+# Architechture Diagram : 
+
+<img width="1686" height="1003" alt="diagram-export-22-03-2026-23_27_10" src="https://github.com/user-attachments/assets/98380591-b3d7-4ee3-9610-b06f4e125b97" />
+
+
+
+
 # Agents
 
 ## 1. Supervisor Agent
