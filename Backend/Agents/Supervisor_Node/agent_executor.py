@@ -17,13 +17,11 @@ class SupervisorAgentExecutor(AgentExecutor):
 
         user_query=context.get_user_input()
 
-        DATA_UPLOADER_NODE="http://localhost:8008"
+        # DATA_UPLOADER_NODE="http://localhost:8008"
         ANALYTICS_FETCHER_NODE="http://localhost:8009"
         ANALYTICS_RUNNER_NODE="http://localhost:8010"
 
         if(user_query):
-            Uploader_Response=await self.agent.delegateTasks(DATA_UPLOADER_NODE,user_query)
-            if(Uploader_Response):
                 Analytics_fetcher_response=await self.agent.delegateTasks(ANALYTICS_FETCHER_NODE,user_query)
                 if(Analytics_fetcher_response):
                     Analytics_runner_response=await self.agent.delegateTasks(ANALYTICS_RUNNER_NODE,Analytics_fetcher_response)

@@ -8,9 +8,6 @@ import uvicorn
 
 if __name__ == "__main__":
 
-    # --------------------------------------------------
-    # Agent Skill
-    # --------------------------------------------------
 
     agent_skill = AgentSkill(
         id="data_upload",
@@ -31,9 +28,6 @@ if __name__ == "__main__":
     )
 
 
-    # --------------------------------------------------
-    # Agent Card
-    # --------------------------------------------------
 
     agent_card = AgentCard(
         name="Data_Uploader_Agent",
@@ -54,9 +48,7 @@ if __name__ == "__main__":
     )
 
 
-    # --------------------------------------------------
-    # Request Handler
-    # --------------------------------------------------
+
 
     request_handler = DefaultRequestHandler(
         agent_executor=Data_Uploader_Agent_Executor(),
@@ -64,9 +56,6 @@ if __name__ == "__main__":
     )
 
 
-    # --------------------------------------------------
-    # A2A Application
-    # --------------------------------------------------
 
     app = A2AStarletteApplication(
         http_handler=request_handler,
@@ -74,9 +63,6 @@ if __name__ == "__main__":
     )
 
 
-    # --------------------------------------------------
-    # Server
-    # --------------------------------------------------
 
     uvicorn.run(
         app.build(),

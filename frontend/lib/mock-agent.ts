@@ -29,7 +29,7 @@ export async function streamMockResponse(
   callbacks: StreamCallbacks,
   signal?: AbortSignal
 ) {
-  const res = await fetch("http://localhost:8000/userquery/process", {
+  const res = await fetch("http://localhost:8000/OPS_BOT/process", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

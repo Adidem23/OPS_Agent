@@ -70,7 +70,7 @@ export function ChatInput({
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Start Debate...."
+          placeholder="Send OPS BOT on Hunt 🗡️...."
           rows={1}
           className="flex-1 resize-none bg-transparent px-2 py-1.5 body-text text-foreground placeholder:text-muted-foreground/50 focus:outline-none"
           disabled={isLoading}
@@ -97,7 +97,7 @@ export function ChatInput({
       </div>
 
       <p className="text-center caption-text mt-3 opacity-50">
-        LLM Debate Agent can give Wrong Answer Also 
+        OPS BOT can give Wrong Answer Also 
       </p>
     </div>
   );

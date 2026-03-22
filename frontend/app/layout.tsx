@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LLM Debate Agent",
+  title: "OPS BOT",
   description:
     "A premium AI agent with real-time tools for weather, search, calculations, and image generation.",
 };

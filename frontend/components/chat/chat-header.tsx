@@ -42,7 +42,7 @@ export function ChatHeader({
         </div>
         <div>
           <h1 className="heading-sm text-foreground flex items-center gap-2">
-            LLM Debate 
+            OPS BOT 
             <span className="label-text text-primary/60 font-normal">v1</span>
           </h1>
           <p className="caption-text mt-0.5">

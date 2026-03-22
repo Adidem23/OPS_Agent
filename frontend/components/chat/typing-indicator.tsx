@@ -21,7 +21,7 @@ export function TypingIndicator() {
           ))}
         </div>
         <span className="caption-text ml-0.5">
-          Debate In Progress ..
+          BOT is Hunting ..
         </span>
         <span className="inline-block w-[2px] h-3.5 bg-primary/60 animate-cursor-blink" />
       </div>

@@ -78,7 +78,7 @@ export function WelcomeScreen({ onSuggestionClick }: WelcomeScreenProps) {
         >
           <h1 className="heading-display text-foreground text-balance">
             Meet{" "}
-            <span className="text-primary font-light">LLM DEBATE AGENT </span>
+            <span className="text-primary font-light">OPS BOT 🤖</span>
           </h1>
         </div>
 
@@ -86,7 +86,7 @@ export function WelcomeScreen({ onSuggestionClick }: WelcomeScreenProps) {
           className="body-text text-muted-foreground mt-4 max-w-[340px] text-balance animate-text-reveal"
           style={{ animationDelay: "0.35s", animationFillMode: "both" }}
         >
-         Where AI Disagress Before User Suffers
+         A Divine Edge For Operational Resilliance..
         </p>
 
         {/* Capabilities grid */}
